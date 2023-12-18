@@ -1,0 +1,31 @@
+@use 'global' as *;
+
+.p-online-form {
+}
+.p-online-form__title {
+  font-size: rem(18);
+  line-height: calc(26 / 18);
+  margin-top: rem(30);
+}
+.p-online-form__price {
+  font-size: rem(18);
+  margin-top: rem(23);
+}
+.p-online-form__detail {
+  font-size: rem(13);
+  line-height: calc(19 / 13);
+  margin-top: rem(23);
+}
+.p-online-form__quantity {
+  font-size: rem(16);
+  line-height: calc(23 / 16);
+  margin-top: rem(23);
+}
+.p-online-form__quantity input {
+  width: rem(67);
+  border-radius: rem(4);
+  background-color: $white;
+}
+.p-online-form__btn {
+  margin-top: rem(23);
+}

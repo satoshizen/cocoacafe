@@ -1,0 +1,118 @@
+@use 'global' as *;
+
+.p-cocoa {
+  @include mq('md') {
+    position: relative;
+  }
+}
+.p-cocoa::before {
+  @include mq('md') {
+    content: '';
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: $light-green;
+    height: calc(802 / 1086 * 100%);
+    z-index: -1;
+  }
+}
+.p-cocoa__inner {
+  display: contents;
+  @include mq('md') {
+    display: block;
+    max-width: rem(1025);
+  }
+}
+.p-cocoa__img {
+  margin-top: rem(22);
+  @include mq('md') {
+    margin-top: rem(36);
+  }
+}
+.p-cocoa__wrap {
+  background-color: $light-green;
+  padding: rem(65) rem(20) rem(62);
+  @include mq('md') {
+    background-color: initial;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: rem(33) 0 rem(114);
+  }
+}
+.p-cocoa__info {
+  color: $white;
+  @include mq('md') {
+    min-width: rem(338);
+  }
+}
+.p-cocoa__catch {
+  font-size: rem(15);
+  line-height: calc(22 / 15);
+  font-family: $font-sub;
+}
+.p-cocoa__shop-name {
+  font-size: rem(32);
+  line-height: calc(39 / 32);
+  font-weight: bold;
+  font-family: $font-en3;
+  border-bottom: 1px solid $white;
+  padding-bottom: rem(7);
+}
+.p-cocoa__tel {
+  margin-top: rem(23);
+}
+.p-cocoa__mail {
+  margin-top: rem(4);
+}
+.p-cocoa__tel,
+.p-cocoa__mail {
+  font-size: rem(16);
+  line-height: calc(19 / 16);
+  font-family: $font-en3;
+  display: flex;
+  align-items: center;
+}
+.p-cocoa__tel::before,
+.p-cocoa__mail::before {
+  content: '';
+  display: inline-block;
+  width: rem(15);
+  height: rem(15);
+  margin-right: rem(22);
+}
+.p-cocoa__tel::before {
+  background: url(../images/tel.svg) no-repeat center center / contain;
+}
+.p-cocoa__mail::before {
+  background: url(../images/mail.svg) no-repeat center center / contain;
+}
+.p-cocoa__detail {
+  font-size: rem(13);
+  margin-top: rem(9);
+  line-height: 1.515;
+}
+.p-cocoa__map {
+  margin-top: rem(27);
+  width: 100%;
+  position: relative;
+  @include mq('md') {
+    width: calc(510 / 1025 * 100%);
+    margin-top: 0;
+  }
+}
+.p-cocoa__map::before {
+  content: '';
+  display: block;
+  padding-top: calc(314 / 510 * 100%);
+}
+
+.p-cocoa__map iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}

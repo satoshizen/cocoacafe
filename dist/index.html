@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- meta情報 -->
+    <title>タイトル</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- ogp -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <!-- ファビコン -->
+    <link rel="icon" href="" />
+    <!-- GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Kiwi+Maru&family=Noto+Sans+JP:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="./js/swiper-bundle.min.js"></script>
+    <script defer src="./js/script.js"></script>
+  </head>
+  <body>
+
+    <header class="p-header l-header">
+      <h1 class="p-header__logo">
+        <a href="/">
+          <img src="./images/CocoaCafe_logo.svg" alt="Cocoa Cafe">
+        </a>
+      </h1>
+      <button class="p-header__hamburger-btn js-hamburger-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="p-header__nav p-header-nav js-drawer">
+        <div class="p-header-nav__wrapper">
+          <div class="p-header-nav__main">
+            <ul class="p-header-nav__items">
+              <li class="p-header-nav__item">
+                <a href="/">
+                  top
+                </a>
+              </li>
+              <li class="p-header-nav__item">
+                <a href="#cocoa">
+                  cocoa
+                </a>
+              </li>
+              <li class="p-header-nav__item">
+                <a href="#menu">
+                  menu
+                </a>
+              </li>
+              <li class="p-header-nav__item">
+                <a href="">
+                  access
+                </a>
+              </li>
+              <li class="p-header-nav__item">
+                <a href="#blog">
+                  blog
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="p-header-nav__sub">
+            <div class="p-header-nav__logo">
+              <img src="./images/CocoaCafe_logo.svg" alt="Cocoa Cafe">
+            </div>
+            <div class="p-header-nav__tel">
+              <a href="tel:01-2345-6789">TEL:01-2345-6789</a>
+            </div>
+            <div class="p-header-nav__btn-wrap">
+              <a href="" class="c-btn2">contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main scroll-container">
+      <div class="p-mv">
+        <div class="p-mv__img">
+          <img src="./images/mv.png" alt="" />
+        </div>
+        <div class="p-mv__text">we<br />love<br />cocoa!</div>
+      </div>
+      <section class="l-concept p-concept u-scrollTop">
+        <div class="l-inner">
+          <h2 class="c-section-title">
+            <span class="c-section-title__circle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+            concept
+          </h2>
+          <div class="p-concept___wrapper">
+            <div class="p-concept__body">
+              <h3 class="p-concept__title">
+                <span>「日本初のココア専門カフェ」</span><br />
+                <span>世界中の美味しいカカオを取り寄せました。</span>
+              </h3>
+              <p class="p-concept__text">
+                とにかく小さい頃からココアが大好きで、いつか世界一美味しい<br />
+                ココアを出すお店を夢見ていました。<br />
+                大学在学中にブラジル、コロンビア、ペルーを一人旅。<br />
+                本場のカカオに触れて、ますますカカオの虜になってしまいました。<br />
+                当店では常時４種類のカカオからココアを作っております。<br />
+                普段とは違ったココアに身も心も癒やされに来て下さい。
+              </p>
+            </div>
+            <div class="p-concept__img">
+              <img src="./images/concept.jpg" alt="写真：カカオの実" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="l-menu p-menu u-scrollTop" id="menu">
+        <div class="l-inner">
+          <h2 class="c-section-title">
+            <span class="c-section-title__circle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+            menu
+          </h2>
+          <div class="p-menu__wrap">
+            <div class="p-menu__img">
+              <img src="./images/menu.png" alt="写真：ココア" />
+            </div>
+            <div class="p-menu__body p-menu-table">
+              <div class="p-menu-table__wrapper">
+                <h3 class="p-menu-table__title">Food<span>フード</span></h3>
+                <div class="p-menu-table__items">
+                  <div class="p-menu-table__item">
+                    <span>ナポリタン</span>
+                    <span></span>
+                    <span>680yen</span>
+                  </div>
+                  <div class="p-menu-table__item">
+                    <span>ペペロンチーノ</span>
+                    <span></span>
+                    <span>530yen</span>
+                  </div>
+                  <div class="p-menu-table__item">
+                    <span>サンドイッチ</span>
+                    <span></span>
+                    <span>300yen</span>
+                  </div>
+                  <div class="p-menu-table__item">
+                    <span>ショートケーキ</span>
+                    <span></span>
+                    <span>480yen</span>
+                  </div>
+                </div>
+              </div>
+              <div class="p-menu-table__wrapper">
+                <h3 class="p-menu-table__title">Drink<span>ドリンク</span></h3>
+                <div class="p-menu-table__items">
+                  <div class="p-menu-table__item">
+                    <span>COCOA</span>
+                    <span></span>
+                    <span>680yen</span>
+                  </div>
+                  <div class="p-menu-table__item">
+                    <span>ミネラルウォーター</span>
+                    <span></span>
+                    <span>200yen</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="l-blog p-blog u-scrollTop" id="blog">
+        <div class="l-inner">
+          <h2 class="c-section-title">
+            <span class="c-section-title__circle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+            blog
+          </h2>
+          <div class="p-blog__cards p-cards">
+            <a href="" class="c-card">
+              <div class="c-card__img">
+                <img src="./images/card.jpg" alt="" />
+              </div>
+              <time datetime="2022-08-26" class="c-card__date">2022.08.26</time>
+              <h3 class="c-card__title">コロンビアから新豆届きました</h3>
+            </a>
+            <a href="" class="c-card">
+              <div class="c-card__img">
+                <img src="./images/card.jpg" alt="" />
+              </div>
+              <time datetime="2022-08-26" class="c-card__date">2022.08.26</time>
+              <h3 class="c-card__title">コロンビアから新豆届きました</h3>
+            </a>
+            <a href="" class="c-card">
+              <div class="c-card__img">
+                <img src="./images/card.jpg" alt="" />
+              </div>
+              <time datetime="2022-08-26" class="c-card__date">2022.08.26</time>
+              <h3 class="c-card__title">コロンビアから新豆届きました</h3>
+            </a>
+            <a href="" class="c-card">
+              <div class="c-card__img">
+                <img src="./images/card.jpg" alt="" />
+              </div>
+              <time datetime="2022-08-26" class="c-card__date">2022.08.26</time>
+              <h3 class="c-card__title">コロンビアから新豆届きました</h3>
+            </a>
+            <a href="" class="c-card">
+              <div class="c-card__img">
+                <img src="./images/card.jpg" alt="" />
+              </div>
+              <time datetime="2022-08-26" class="c-card__date">2022.08.26</time>
+              <h3 class="c-card__title">コロンビアから新豆届きました</h3>
+            </a>
+            <a href="" class="c-card">
+              <div class="c-card__img">
+                <img src="./images/card.jpg" alt="" />
+              </div>
+              <time datetime="2022-08-26" class="c-card__date">2022.08.26</time>
+              <h3 class="c-card__title">コロンビアから新豆届きました</h3>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="l-online p-online u-scrollTop">
+        <div class="l-inner p-online__inner">
+          <h2 class="c-section-title">
+            <span class="c-section-title__circle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+            online
+          </h2>
+          <div class="p-online__wrap">
+            <div class="p-online__slider p-slider">
+              <!-- スライダー -->
+              <div class="swiper p-slider__main js-slider-main">
+                <div class="swiper-wrapper p-slider__wrapper">
+                  <div class="swiper-slide p-slider__slide">
+                    <img src="./images/online1.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide p-slider__slide">
+                    <img src="./images/online2.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide p-slider__slide">
+                    <img src="./images/online3.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide p-slider__slide">
+                    <img src="./images/online4.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide p-slider__slide">
+                    <img src="./images/online5.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <!-- サムネイル -->
+              <div class="swiper p-slider__thumbnail js-slider-thumbs">
+                <div class="swiper-wrapper p-slider__wrapper">
+                  <div class="swiper-slide p-slider__slide">
+                    <img src="./images/online1.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide p-slider__slide">
+                    <img src="./images/online2.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide p-slider__slide">
+                    <img src="./images/online3.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide p-slider__slide">
+                    <img src="./images/online4.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide p-slider__slide">
+                    <img src="./images/online5.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-online__item p-online-form">
+              <h3 class="p-online-form__title">COCOA オリジナルチョコ</h3>
+              <div class="p-online-form__price">¥６００</div>
+              <div class="p-online-form__detail">
+                内容量：６０g<br />
+                原材料：<br />
+                カカオマス<br />
+                砂糖<br />
+                ココアパウダー乳化剤<br />
+                乳化剤
+              </div>
+              <div class="p-online-form__quantity">
+                数量
+                <input type="number" />
+                点
+              </div>
+              <div class="p-online-form__btn">
+                <button class="c-btn">カートに入れる</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-qa l-qa u-scrollTop">
+        <div class="l-inner p-qa__inner">
+          <h2 class="c-section-title">
+            <span class="c-section-title__circle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+            Q&A
+          </h2>
+          <div class="p-qa__accordion p-accordion">
+            <div class="p-accordion__item">
+              <button class="p-accordion__btn js-accordion-btn">予約は出来ますか？</button>
+              <div class="p-accordion__content js-accordion-content">
+                ご予約承っております。電話にて受け付けておりますので、営業時間にご連絡下さい。<br />尚、当日ご予約は受け付けておりませんので、ご了承下さい。
+              </div>
+            </div>
+            <div class="p-accordion__item">
+              <button class="p-accordion__btn js-accordion-btn">ココアの粉を売ってもらうことは可能でしょうか？</button>
+              <div class="p-accordion__content js-accordion-content">
+                こたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえ
+              </div>
+            </div>
+            <div class="p-accordion__item">
+              <button class="p-accordion__btn js-accordion-btn">
+                結婚式の二次会で利用したいと思っていますが、可能ですか？
+              </button>
+              <div class="p-accordion__content js-accordion-content">
+                こたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえこたえ
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="l-cocoa p-cocoa u-scrollTop" id="cocoa">
+        <div class="p-cocoa__inner l-inner">
+          <h2 class="c-section-title">
+            <span class="c-section-title__circle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+            cocoa
+          </h2>
+          <div class="p-cocoa__img">
+            <img src="./images/cocoa.jpg" alt="写真：店内" />
+          </div>
+          <div class="p-cocoa__wrap">
+            <div class="p-cocoa__info">
+              <div class="p-cocoa__catch">日本初のココア専門カフェ</div>
+              <div class="p-cocoa__shop-name">cocoa</div>
+              <div class="p-cocoa__tel">TEL:01-2345-6789</div>
+              <div class="p-cocoa__mail">MAIL:cocoa@example.com</div>
+              <div class="p-cocoa__detail">
+                住所：東京都新宿新宿xx-xx-xx<br />
+                定休日：毎週月・火曜日
+              </div>
+            </div>
+            <div class="p-cocoa__map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.747798537226!2d139.74323885076598!3d35.65858483872405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bbd9009ec09%3A0x481a93f0d2a409dd!2z5p2x5Lqs44K_44Ov44O8!5e0!3m2!1sja!2sjp!4v1661862319322!5m2!1sja!2sjp"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <a href="#" class="c-pagetop l-pagetop">
+        <img src="./images/pagetop.png" alt="ページトップへ戻る">
+      </a>
+
+      <footer class="l-footer p-footer">
+        <div class="l-inner">
+          <div class="p-footer__nav p-nav">
+            <ul class="p-nav__list">
+              <li class="p-nav__item"><a href="">top</a></li>
+              <li class="p-nav__item"><a href="">cocoa</a></li>
+              <li class="p-nav__item"><a href="">access</a></li>
+              <li class="p-nav__item"><a href="">menu</a></li>
+              <li class="p-nav__item"><a href="">blog</a></li>
+              <li class="p-nav__item"><a href="">contact</a></li>
+            </ul>
+          </div>
+          <div class="p-footer__copylight">
+            <small>© 2021 cocoa Corporation.</small>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

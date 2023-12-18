@@ -1,0 +1,147 @@
+@use "global" as *;
+
+.p-header-nav {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient($white 40%, #FFF5F2 100%);
+  overflow: auto;
+  @include mq(md) {
+    background: $white;
+    height: inherit;
+    overflow: initial;
+    width: initial;
+  }
+}
+
+.p-header-nav__wrapper {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: rem(196);
+  padding-bottom: rem(34);
+  @include mq(md) {
+    padding: 0;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+.p-header-nav__main {
+  @include mq(md) {
+    height: inherit;
+    padding-top: rem(27);
+    margin-right: rem(9);
+  }
+}
+
+.p-header-nav__sub {
+  margin-top: rem(50);
+  @include mq(md) {
+    margin-top: 0;
+  }
+}
+
+.p-header-nav__items {
+  @include mq(md) {
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+}
+
+.p-header-nav__item:nth-child(n+2){
+  margin-top: rem(52);
+  @include mq(md) {
+    margin-top: 0;
+  }
+}
+
+.p-header-nav__item {
+  height: inherit;
+}
+
+.p-header-nav__item a {
+  color: $brown;
+  font-family: $font-en3;
+  font-weight: bold;
+  font-size: rem(16);
+  line-height: calc(19 / 16);
+  text-transform: uppercase;
+  @include mq(md) {
+    padding: 0 rem(29);
+    height: inherit;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+}
+
+.p-header-nav__item a::before {
+  content: "▶";
+  display: inline-block;
+}
+
+.p-header-nav__item a:hover {
+  @include mq(md) {
+    opacity: 1;
+    color: $yellow;
+  }
+}
+
+.p-header-nav__item a::after {
+  @include mq(md) {
+    content: "";
+    width: calc(100% - #{rem(29)} * 2);
+    height: 2px;
+    background-color: $yellow;
+    display: inline-block;
+    position: absolute;
+    bottom: rem(21);
+    left: rem(30);
+    transform: scaleX(0);
+    transition: .3s;
+  }
+}
+
+.p-header-nav__item a:hover::after {
+  @include mq(md) {
+    transform: scaleX(1);
+  }
+}
+
+.p-header-nav__logo {
+  padding: 0 rem(15) rem(13);
+  border-bottom: 1px solid $brown;
+  width: rem(144);
+  margin: 0 auto;
+  @include mq(md) {
+    display: none;
+  }
+}
+
+.p-header-nav__logo img {
+  width: rem(118);
+}
+
+.p-header-nav__tel {
+  color: $brown;
+  font-family: $font-en3;
+  font-weight: bold;
+  font-size: rem(16);
+  line-height: calc(19 / 16);
+  text-align: center;
+  margin-top: rem(19);
+  @include mq(md) {
+    margin-top: 0;
+  }
+}
+
+.p-header-nav__btn-wrap {
+  margin-top: rem(30);
+  @include mq(md) {
+    margin-top: rem(8);
+    text-align: center;
+  }
+}

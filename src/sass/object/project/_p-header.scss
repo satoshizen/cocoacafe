@@ -1,0 +1,83 @@
+@use "global" as *;
+
+.p-header {
+  height: rem(82);
+  background-color: $white;
+  display: flex;
+  justify-content: center;
+  @include mq('md') {
+    height: rem(96);
+    padding-left: rem(22);
+    padding-right: rem(18);
+    justify-content: space-between;
+  }
+}
+
+.p-header__nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  @include mq(md) {
+    display: block;
+    position: static;
+  } 
+}
+
+.p-header__logo {
+  height: inherit;
+}
+
+.p-header__logo a img {
+  @include mq(md) {
+    width: rem(118);
+  }
+}
+
+.p-header__logo a {
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.p-header__hamburger-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  height: inherit;
+  width: rem(64);
+  @include mq(md) {
+    display: none;
+  }
+}
+
+.p-header__hamburger-btn span {
+  width: rem(24);
+  height: 4px;
+  background-color: $brown;
+  display: block;
+  border-radius: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  transition: .3s;
+}
+
+.p-header__hamburger-btn span:nth-child(2){
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.p-header__hamburger-btn.open span:nth-child(1){
+  transform: rotate(45deg);
+  top: 7px;
+}
+.p-header__hamburger-btn.open span:nth-child(2){
+  opacity: 0;
+}
+.p-header__hamburger-btn.open span:nth-child(3){
+  transform: rotate(-45deg);
+  top: -9px;
+}

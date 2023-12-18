@@ -1,0 +1,24 @@
+@use 'global' as *;
+
+.c-section-title {
+  font-size: rem(36);
+  font-family: $font-en1;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: $green;
+  line-height: calc(39 / 36);
+  text-align: center;
+}
+.c-section-title__circle {
+  width: rem(54);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.c-section-title__circle span {
+  display: inline-block;
+  width: rem(10);
+  height: rem(10);
+  border-radius: 50%;
+  background-color: $green;
+}

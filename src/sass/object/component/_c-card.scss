@@ -1,0 +1,60 @@
+@use 'global' as *;
+
+
+.c-card {
+  display: block;
+  background-color: $white;
+  border-radius: rem(20);
+  padding: rem(21) rem(12);
+  box-shadow: 4px 4px 4px 0 rgba($color: #d6d1c9, $alpha: 0.21);
+  @include mq('md') {
+    padding: rem(24) rem(15);
+  }
+}
+.c-card__img {
+  width: 100%;
+  position: relative;
+  border-radius: rem(5);
+  overflow: hidden;
+}
+.c-card__img::before {
+  content: '';
+  display: block;
+  padding-top: calc(228 / 310 * 100%);
+  @include mq('md') {
+    padding-top: calc(260 / 392 * 100%);
+  }
+}
+.c-card__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.c-card__date {
+  margin-top: rem(11);
+  font-size: rem(13);
+  line-height: calc(16 / 13);
+  display: block;
+  font-family: $font-en3;
+  @include mq('md') {
+    margin-top: rem(33);
+  }
+}
+.c-card__date::before {
+  content: 'update\02';
+  display: inline-block;
+  text-transform: uppercase;
+  white-space: pre;
+}
+.c-card__title {
+  margin-top: rem(11);
+  font-size: rem(16);
+  line-height: calc(23/16);
+  font-weight: bold;
+  @include mq('md') {
+    margin-top: rem(3);
+  }
+}

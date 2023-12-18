@@ -1,0 +1,57 @@
+@use 'sass:math';
+
+// インナー幅
+$innerWidth: 1357px;
+
+// 余白
+$padding-pc: 25px;
+$padding-sp: 20px;
+
+// フォント
+@font-face {
+  font-family: 'Intrepid ExtraBold';
+  src: url(../font/IntrepidExtraBold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Routen';
+  src: url(../font/Routen_Regular.ttf) format('truetype');
+}
+$font-main: 'Noto Sans JP', sans-serif; // メイン
+$font-sub: 'Kiwi Maru', serif; // 丸みある日本語
+$font-en1: 'Intrepid ExtraBold', sans-serif; //極太の英字
+$font-en2: 'Routen', cursive; // 筆記体
+$font-en3: 'Inter', sans-serif; // 細字
+
+// 色指定
+$text: #000000;
+$text-sub: #595959;
+$white: #fff;
+$yellow: #ffb800;
+$orange: #ff9e57;
+$red: #d1433a;
+$brown: #8a654d;
+$green: #5f7865;
+$light-green: #79a383;
+
+// ブレイクポイント
+$breakpoints: (
+  sm: 600,
+  md: 768,
+  lg: 1024,
+  xl: 1440,
+);
+
+// メディアクエリ
+$mediaquerys: (
+  sm: "screen and (min-width: #{map-get($breakpoints,'sm')}px)",
+  md: "screen and (min-width: #{map-get($breakpoints,'md')}px)",
+  lg: "screen and (min-width: #{map-get($breakpoints,'lg')}px)",
+  xl: "screen and (min-width: #{map-get($breakpoints,'xl')}px)",
+);
+
+// メディアクエリを "@include mq(){}" で書くことができる
+@mixin mq($mediaquery: md) {
+  @media #{map-get($mediaquerys, $mediaquery)} {
+    @content;
+  }
+}

@@ -1,0 +1,23 @@
+@use 'global' as *;
+
+.p-nav__list {
+  padding-top: rem(46);
+  @include mq('md') {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.p-nav__item {
+  text-transform: uppercase;
+  font-size: rem(16);
+  font-weight: bold;
+  font-family: $font-en3;
+}
+.p-nav__item + .p-nav__item {
+  margin-top: rem(21);
+  @include mq('md') {
+    margin-top: 0;
+    margin-left: rem(76);
+  }
+}

@@ -1,0 +1,18 @@
+@use 'global' as *;
+
+.p-footer {
+  background-color: $green;
+  color: $white;
+  padding-bottom: rem(10);
+  @include mq('md'){
+    padding-bottom: rem(22);
+  }
+}
+
+.p-footer__copylight {
+  margin-top: rem(33);
+  text-align: center;
+}
+.p-footer__copylight small {
+  font-size: rem(13);
+}

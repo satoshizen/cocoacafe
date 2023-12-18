@@ -1,0 +1,28 @@
+@use 'global' as *;
+
+.p-online {
+}
+.p-online__inner {
+  @include mq('md'){
+    max-width: rem(1075);
+  }
+}
+.p-online__wrap {
+  @include mq('md') {
+    display: flex;
+    align-items: center;
+  }
+}
+.p-online__slider {
+  margin-top: rem(30);
+  @include mq('md') {
+    margin-top: rem(36);
+    width: 50%;
+  }
+}
+.p-online__item {
+  @include mq('md') {
+    width: 50%;
+    padding-left: rem(80);
+  }
+}

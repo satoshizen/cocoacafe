@@ -1,0 +1,31 @@
+@use 'global' as *;
+
+.p-mv {
+  position: relative;
+  height: calc(100vh - #{rem(82)});
+  min-height: rem(700);
+  overflow-x: hidden;
+  // background-color: red;
+  @include mq('md') {
+    height: calc(100vh - #{rem(96)});
+  }
+}
+.p-mv__img {
+  width: rem(696);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.p-mv__text {
+  color: $white;
+  font-size: rem(64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: $font-en3;
+  font-weight: bold;
+  text-transform: uppercase;
+}

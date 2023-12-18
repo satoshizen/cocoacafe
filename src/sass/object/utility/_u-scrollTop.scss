@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.u-scrollTop {
+  scroll-margin-top: rem(65);
+  @include mq(md) {
+    scroll-margin-top: rem(96);
+  }
+}

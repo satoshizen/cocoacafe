@@ -1,0 +1,24 @@
+@use 'global' as *;
+
+.p-menu {
+}
+.p-menu__wrap {
+  margin-top: rem(22);
+  @include mq('md') {
+    margin-top: rem(36);
+    display: flex;
+    align-items: center;
+  }
+}
+.p-menu__img {
+  width: calc(250 / 335 * 100%);
+  @include mq('md') {
+    width: 50%;
+  }
+}
+.p-menu__body {
+  margin-top: rem(22);
+  @include mq('md') {
+    width: 50%;
+  }
+}

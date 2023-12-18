@@ -1,0 +1,58 @@
+@use "global" as *;
+
+.p-accordion__item + .p-accordion__item {
+  margin-top: rem(30);
+  @include mq(md) {
+    margin-top: rem(24);
+  }
+}
+
+.p-accordion__btn {
+  background-color: $light-green;
+  color: $white;
+  font-size: rem(16);
+  letter-spacing: 0.2em;
+  line-height: calc(23 / 16);
+  position: relative;
+  padding: rem(16) rem(42) rem(16) rem(18);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  text-align: left;
+  @include mq(md) {
+    padding: rem(23) rem(75) rem(23) rem(53);
+  }
+}
+
+.p-accordion__btn::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 12px 6px 0 6px;
+  border-color: #ffffff transparent transparent transparent;
+  position: absolute;
+  top: 50%;
+  right: rem(19);
+  transform: translateY(-50%);
+  transition: .3s;
+  @include mq(md) {
+    border-width: 11px 10px 0 10px;
+    right: rem(57);
+  }
+}
+
+.p-accordion__btn.open::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.p-accordion__content {
+  display: none;
+  padding: rem(26) rem(18) rem(16) rem(18);
+  font-size: rem(14);
+  line-height: calc(21 / 14);
+  @include mq(md) {
+    padding: rem(31) rem(100) rem(21) rem(53);
+  }
+}

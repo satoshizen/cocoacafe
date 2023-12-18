@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.c-btn{
+  display: inline-block;
+  background-color: $orange;
+  color: $white;
+  min-width: rem(335);
+  max-width: 100%;
+  font-size: rem(16);
+  line-height: calc(23/16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: rem(12);
+  border-radius: rem(3);
+  @include mq('md'){
+    min-width: rem(357);
+  }
+}
+.c-btn::before{
+  content: '';
+  display: inline-block;
+  background: url(../images/online-cart.svg) no-repeat center center / contain;
+  width: rem(23);
+  height: rem(25);
+  margin-right: rem(4);
+}

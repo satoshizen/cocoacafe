@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.c-pagetop {
+  width: rem(53);
+  height: rem(53);
+  @include mq(md) {
+    width: rem(67);
+    height: rem(67);
+  }
+}

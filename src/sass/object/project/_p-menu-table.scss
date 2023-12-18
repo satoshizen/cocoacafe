@@ -1,0 +1,79 @@
+@use 'global' as *;
+
+.p-menu-table__title {
+  font-family: $font-en2;
+  line-height: 1;
+  font-size: rem(40);
+  text-align: center;
+  font-weight: 400;
+  position: relative;
+  color: $text-sub;
+}
+.p-menu-table__title span {
+  display: block;
+  font-size: rem(13);
+}
+.p-menu-table__title::before,
+.p-menu-table__title::after {
+  content: '';
+  position: absolute;
+  background-color: $text-sub;
+  width: rem(70);
+  height: 1px;
+  top: 50%;
+}
+.p-menu-table__title::before {
+  left: calc(50% - #{rem(56)});
+  transform: translate(-100%, -50%);
+}
+.p-menu-table__title::after {
+  right: calc(50% - #{rem(56)});
+  transform: translate(100%, -50%);
+}
+.p-menu-table__items {
+  margin-top: rem(29);
+  max-width: rem(366);
+  margin-left: auto;
+  margin-right: auto;
+}
+.p-menu-table__item {
+  font-size: rem(18);
+  font-family: $font-sub;
+  display: flex;
+  line-height: calc(26 / 18);
+  color: $text-sub;
+}
+.p-menu-table__item span:first-child {
+  width: 53%;
+  @include mq('md') {
+    width: 58%;
+  }
+}
+.p-menu-table__item span:nth-child(2) {
+  width: rem(61);
+  @include mq('md') {
+    width: rem(65);
+  }
+}
+.p-menu-table__item span:last-child {
+  width: calc(47% - #{rem(61)});
+  text-align: right;
+  // word-break: break-all;
+  overflow-wrap: break-word;
+  @include mq('md') {
+    width: calc(42% - #{rem(65)});
+  }
+}
+.p-menu-table__item span:nth-child(2)::before {
+  content: '・・・';
+  display: inline-block;
+}
+.p-menu-table__wrapper + .p-menu-table__wrapper {
+  margin-top: rem(58);
+}
+.p-menu-table__item + .p-menu-table__item {
+  margin-top: rem(13);
+  @include mq('md') {
+    margin-top: rem(10);
+  }
+}

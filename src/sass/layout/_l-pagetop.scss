@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.l-pagetop {
+  position: fixed;
+  right: rem(10);
+  bottom: rem(10);
+  @include mq(md) {
+    right: rem(40);
+    bottom: rem(40);
+  }
+}

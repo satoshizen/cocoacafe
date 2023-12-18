@@ -1,0 +1,42 @@
+@use 'global' as *;
+
+.p-slider {
+}
+.p-slider__main {
+}
+.p-slider__main .p-slider__wrapper {
+}
+.p-slider__slide {
+  width: 100%;
+  position: relative;
+}
+.p-slider__slide::before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+  @include mq('md') {
+    padding-top: calc(494 / 506 * 100%);
+  }
+}
+.p-slider__slide img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.p-slider__thumbnail {
+  margin-top: rem(6);
+}
+.p-slider__thumbnail .p-slider__wrapper {
+}
+.p-slider__thumbnail .p-slider__slide {
+  opacity: 0.5;
+  cursor: pointer;
+  width: 100%;
+}
+
+.p-slider__thumbnail .swiper-slide-thumb-active {
+  opacity: 1;
+}
